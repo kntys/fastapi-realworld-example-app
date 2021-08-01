@@ -1,0 +1,10 @@
+version: "3.0"
+
+service:
+    api:
+        container_name: "fastapi"
+        build: .
+        restart: always
+        tty: true
+        ports:
+            - 8000:8000
